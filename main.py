@@ -6,7 +6,6 @@ from aiogram.utils.keyboard import InlineKeyboardBuilder
 
 TOKEN = "8675282028:AAG00ys5IwGEFP_PxHsTkaT93muiYPqRgP4"
 
-# Karta va otziv havolasi
 CARD_NUMBER = "9860060943606529"
 CARD_HOLDER = "BEKZOD B."
 REVIEWS_LINK = "https://t.me/+YU4o3av-C5w2MjZi"
@@ -167,7 +166,7 @@ async def profile_menu(callback: types.CallbackQuery):
     )
     await callback.answer()
 
-@dp.callback_query(F.data.in__{"stats", "about", "lang"})
+@dp.callback_query(F.data.in_({"stats", "about", "lang"}))
 async def dummy_menus(callback: types.CallbackQuery):
     builder = InlineKeyboardBuilder()
     builder.button(text="⬅️ Orqaga", callback_data="back_to_main")
@@ -192,3 +191,4 @@ async def main():
 
 if __name__ == "__main__":
     asyncio.run(main())
+    
