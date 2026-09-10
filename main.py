@@ -3,7 +3,7 @@ import logging
 from aiogram import Bot, Dispatcher, types
 from aiogram.filters import CommandStart
 
-TOKEN = "8675282028:AAHWDg1ETn7RTJm_XqR8peaw5Loa-enb1E"
+TOKEN = "8675282028:AAHWDoG1ETn7RTJm_XqR8peaW5Loa-enb1E"
 
 bot = Bot(token=TOKEN)
 dp = Dispatcher()
