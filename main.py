@@ -4,7 +4,7 @@ from aiogram import Bot, Dispatcher, types, F
 from aiogram.filters import CommandStart
 from aiogram.utils.keyboard import InlineKeyboardBuilder
 
-TOKEN = "8675282028:AAHWDg1ETn7RTJm_XqR8peaw5Loa-enb1E"
+TOKEN = "8675282028:AAE_YNHgmwVlqcpKSc9GfWgUt5va8b2XaA4"
 
 # Karta ma'lumotlaringiz
 CARD_NUMBER = "9860060943606529"
